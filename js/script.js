@@ -64,12 +64,9 @@
         });
     }
 
-    const render = () => {
-        let taskHTMLContent = "";
-
-        for (const task of tasks) {
-            taskHTMLContent += `
-              <li class="list__taskBody js-task">
+    const renderTask = () => {
+        const taskHTMLContent = task => `
+            <li class="list__taskBody${task.done && hideDone ? " list__taskBody--hidden" : ""} js-task">
               <button class="list__taskButton list__taskButton--checkMark js-done">
                ${task.done ? "✓" : ""}
               </button> 
@@ -80,12 +77,11 @@
               </button>
              </li>
            `;
-        }
-
-        document.querySelector(".js-taskList").innerHTML = taskHTMLContent;
-
-        triggerEvents();
+        const ListContent = document.querySelector(".js-taskList")
+        ListContent.innerHTML = tasks.map(taskHTMLContent).join("");
     };
+
+    triggerEvents();
 
     const onFormSubmit = (event) => {
         event.preventDefault();
