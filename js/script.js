@@ -28,10 +28,16 @@
     };
 
     const markAllAsDone = () => {
-        tasks = tasks.map((task) => ({
-            ...task,
-            done: true,
-        }));
+        tasks = tasks.map((task) => {
+            if (task, done) {
+                return task;
+            }
+
+            return {
+                ...task,
+                done: true,
+            };
+        });
         render();
     };
 
