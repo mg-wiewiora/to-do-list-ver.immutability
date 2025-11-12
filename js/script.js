@@ -25,7 +25,15 @@
             ...tasks.slice(taskIndex + 1),
         ];
         render();
-    }
+    };
+
+    const markAllAsDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+        render();
+    };
 
     const triggerEvents = () => {
         const deleteButtons = document.querySelectorAll(".js-delete");
