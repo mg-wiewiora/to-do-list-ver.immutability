@@ -41,6 +41,11 @@
         render();
     };
 
+    const ToggleHideDone = () => {
+        hideDone = !hideDone;
+        render();
+    };
+
     const triggerEvents = () => {
         const deleteButtons = document.querySelectorAll(".js-delete");
 
