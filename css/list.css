@@ -32,6 +32,7 @@
 
 .list__taskButton--checkMark {
     background-color: #0a8127;
+    transition: 0.5s;
 }
 
 .list__taskButton--checkMark:hover {
@@ -44,6 +45,7 @@
 
 .list__taskButton--delete {
     background-color: #e42121;
+    transition: 0.5s;
 }
 
 .list__taskButton--delete:hover {

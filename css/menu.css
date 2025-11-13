@@ -1,17 +1,21 @@
 .menu {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .menu__button {
-
-
+    border: none;
+    background-color: white;
+    color: rgb(71, 44, 44);
+    font-weight: bold;
+    margin: 0 0 0 20px;
+    transition: 0.5s;
 }
 
 .menu__button:hover {
-
+    color: teal;
 }
 
-,.menu__button:active {
-
-    
+.menu__button:active {
+    color: hsl(180, 100%, 30%);
 }
