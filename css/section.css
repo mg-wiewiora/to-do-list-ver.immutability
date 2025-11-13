@@ -15,8 +15,8 @@
 
 @media (max-width: 767px) {
     .section__menuContainer {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
     }
 }
 
