@@ -82,23 +82,36 @@
     };
 
     const showMenu = () => {
-        const menuContent = document.querySelector(.js-menu);
+        const menuContent = document.querySelector(".js-menu");
+
         if (!tasks.length) {
             menuContent.innerHTML = "";
             return;
-        }
+        };
 
         menuContent.innerHTML = `
         <button class="menu__button js-toggleHideDone">
         ${hideDone ? "Pokaż" : "Ukryj"} ukończone
         </button>
-        <button class="menu__button js-markAllAsDone"${tasks.every(({done}) => done) ? " disabled" : ""}>
+        <button class="menu__button js-markAllAsDone"${tasks.every(({ done }) => done) ? " disabled" : ""}>
         Ukończ wszystkie
         </button>
         `;
     };
 
+    const triggerMenuEvents = () => {
+        const markAllAsDoneButton = document.querySelector(".js-markAllAsDone");
 
+        if (markAllAsDoneButton) {
+            markAllAsDoneButton.addEventListener("click", markAllAsDone);
+        }
+
+        const toggleHideDoneButton = document.querySelector(".js-toggleHideDone");
+
+        if (toggleHideDoneButton) {
+            toggleHideDoneButton.addEventListener("click", ToggleHideDone)
+        }
+    };
 
     triggerEvents();
 
