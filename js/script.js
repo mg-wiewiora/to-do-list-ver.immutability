@@ -29,7 +29,7 @@
 
     const markAllAsDone = () => {
         tasks = tasks.map((task) => {
-            if (task, done) {
+            if (task.done) {
                 return task;
             }
 
