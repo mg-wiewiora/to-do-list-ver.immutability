@@ -20,6 +20,7 @@
 
 .list__taskContent--done {
     text-decoration: line-through;
+    color: #888;
 }
 
 .list__taskButton {
