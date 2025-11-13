@@ -81,6 +81,25 @@
         ListContent.innerHTML = tasks.map(taskHTMLContent).join("");
     };
 
+    const showMenu = () => {
+        const menuContent = document.querySelector(.js-menu);
+        if (!tasks.length) {
+            menuContent.innerHTML = "";
+            return;
+        }
+
+        menuContent.innerHTML = `
+        <button class="menu__button js-toggleHideDone">
+        ${hideDone ? "Pokaż" : "Ukryj"} ukończone
+        </button>
+        <button class="menu__button js-markAllAsDone"${tasks.every(({done}) => done) ? " disabled" : ""}>
+        Ukończ wszystkie
+        </button>
+        `;
+    };
+
+
+
     triggerEvents();
 
     const onFormSubmit = (event) => {
