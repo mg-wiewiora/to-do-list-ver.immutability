@@ -41,7 +41,7 @@
         render();
     };
 
-    const ToggleHideDone = () => {
+    const toggleHideDone = () => {
         hideDone = !hideDone;
         render();
     };
@@ -75,8 +75,8 @@
               🗑</button>
              </li>
            `;
-        const ListContent = document.querySelector(".js-taskList");
-        ListContent.innerHTML = tasks.map(taskHTMLContent).join("");
+        const listContent = document.querySelector(".js-taskList");
+        listContent.innerHTML = tasks.map(taskHTMLContent).join("");
     };
 
     const showMenu = () => {
@@ -107,7 +107,7 @@
         const toggleHideDoneButton = document.querySelector(".js-toggleHideDone");
 
         if (toggleHideDoneButton) {
-            toggleHideDoneButton.addEventListener("click", ToggleHideDone)
+            toggleHideDoneButton.addEventListener("click", toggleHideDone)
         }
     };
 
