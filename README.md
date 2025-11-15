@@ -58,10 +58,10 @@ This project provided practical experience with:
 
 ---
 
-![gif - how to interact with the page](https://github.com/user-attachments/assets/ed08a117-93d5-4886-9de3-91e05c5f4b41)
+![gif - how to interact with the page](https://github.com/user-attachments/assets/de709230-e0b0-4430-b093-5ccd502f971a)
 
 
-![gif - responsiveness of the page](https://github.com/user-attachments/assets/cb2cca02-b4ca-4f73-9968-ee4a83a3a9d1)
+![gif - responsiveness of the page](https://github.com/user-attachments/assets/d06dd349-f56d-4026-973d-416ffb2d66f6)
 
 
 ## Author
