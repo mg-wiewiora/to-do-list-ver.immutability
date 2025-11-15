@@ -11,7 +11,7 @@
     align-items: center;
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
-    padding: 20 px;
+    padding: 20px;
 }
 
 @media (max-width: 767px) {
@@ -23,6 +23,11 @@
 .section__title {
     margin: 0;
     font-size: 20px;
+}
+
+.section__title--form {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
 }
 
 .section__content {
