@@ -10,19 +10,17 @@
     grid-gap: 20px;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 20 px;
 }
 
 @media (max-width: 767px) {
     .section__menuContainer {
         grid-template-columns: 1fr;
-        grid-gap: 0;
     }
 }
 
 .section__title {
-    border-bottom: 1px solid #ddd;
-    padding: 20px;
     margin: 0;
     font-size: 20px;
 }

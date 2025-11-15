@@ -18,10 +18,10 @@
 .form__button {
     background-color: teal;
     color: white;
-    font-weight: bold;
     border: none;
     padding: 10px;
-    transition: 0.75s;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .form__button:hover {

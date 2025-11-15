@@ -5,12 +5,11 @@
 
 .menu__button {
     border: none;
-    background-color: white;
-    color: rgb(83, 49, 49);
-    font-weight: bold;
+    background-color: transparent;
+    color: teal;
     margin: 0 0 0 20px;
-    padding: 5px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -22,13 +21,13 @@
 
 
 .menu__button:hover {
-    color: teal;
+    color: #009999;
 }
 
 .menu__button:active {
-    color: hsl(180, 100%, 30%);
+    color: #00b3b3;
 }
 
 .menu__button:disabled {
-    color: #888;
+    color: #ccc;
 }
